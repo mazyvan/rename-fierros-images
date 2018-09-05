@@ -2,8 +2,8 @@
 # Fierros Rename Files - Bash script, by Iván Sánchez
 
 set -e
-SAVEIFS=$IFS
-IFS=$(echo -en "\n\b")
+OIFS="$IFS"
+IFS=$'\n'
 
 echo 'Fierros Rename Files - Bash script, by Iván Sánchez'
 echo ""
@@ -48,7 +48,7 @@ for dir in $images_path/*/; do
 
 done
 
-IFS=$SAVEIFS
+IFS="$OIFS"
 
 echo ""
 echo "Every file in the path has been successfully renamed"
