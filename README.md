@@ -1,4 +1,4 @@
-## Fierros Rename Files - Bash script
+## Rename Fierros Images - Bash script
 
 Simple script que renombra los archivos dentro de una carpta con el nombre de la carpeta abuelo
 
